@@ -1,0 +1,4 @@
+# 441
+Homework 1 thoughts:
+
+This week, although it was supposed to me a refresher week, ended up giving me some trouble for sure. Last time I cook a web design class was ~2 years ago, and trying to remember the proper html code was frustrating to say the least. Trying as hard as I could, and referring to your example code some for the style.css, I couldn't figure out how to have it connect to my original index. I'll be doing some more research into it before next week as well so hopefully I can get re-aquainted with everything, but like I said it was a bit of a shock jumping right back into the world of web design after being away from it for so long.
