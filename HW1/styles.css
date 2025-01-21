@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-image: url("imgs/water.jpg");
+    background-image: url("imgs/spider.webp");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,7 +23,7 @@ body {
     text-align: center;
     width: 75%;
     min-width: 300px;
-    background-color: rgba(210, 210, 210, 0.8);
+    background-color: rgba(200, 218, 254, 0.8);
 
 }
 
@@ -41,11 +41,11 @@ body {
     /* as a percentage of the viewport height (vh) */
     height: 100vh;
     min-height: 740px;
-    background-image: url("imgs/water2.jpg");
+    background-image: url("imgs/city1.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, .8);
+    box-shadow: 0 4px 10px rgba(255, 203, 203, 0.8);
 }
 
 .hero .title {
