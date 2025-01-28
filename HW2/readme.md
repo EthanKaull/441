@@ -1,0 +1,3 @@
+This week seemed like a much easier venture. Although last week was more review, it seemed like picking up the basics of javascript seemed easier for some reason.
+
+When I asked chatGPT to replicate this week's homework, it honestly did a pretty good job. Maybe it's because this week was super simple, but the code was actually pretty organized. I even asked it to put in comments explaining what it did, and it did a pretty good job. Now when I tried to excecute the code, unfortunately it didn't work out. It had a hard time processing that the name of the javascript file had to be the same one that you reference in the html index, so I had to do a few touch ups. It also didn't make a css file, but instead just put the styling on the html file itself.
