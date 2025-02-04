@@ -1,72 +1,30 @@
 function storyFunction(choice) {
     var answer1 = document.getElementById("choice1").innerHTML;
     var answer2 = document.getElementById("choice2").innerHTML;
-    if (choice == 1 && answer1 == "Yes") {
-        document.getElementById("story").innerHTML = "Pugster continues into the park with confidence. Pugster meets another dog. What Pugster do now?";
-        document.getElementById("choice1").innerHTML = "Meet others";
-        document.getElementById("choice2").innerHTML = "Walk alone";
-    } else if (choice == 2 && answer2 == "No") {
-        document.getElementById("story").innerHTML = "Pugster starts to back out, but then something in the back of Pugster's mind says 'Wait!'";
-        document.getElementById("choice1").innerHTML = "Go ahead and be brave";
-        document.getElementById("choice2").innerHTML = "Scan the situation";
-    } else if (choice == 1 && answer1 == "Meet others") {
-        document.getElementById("story").innerHTML = "Pugster walks over to a group of dogs and says hello.  Pugster is trying to decide who is genuine or not.";
-        document.getElementById("choice1").innerHTML = "Evaluate all dogs";
-        document.getElementById("choice2").innerHTML = "Stay clear";
-    } else if (choice == 2 && answer2 == "Walk alone") {
-        document.getElementById("story").innerHTML = "Pugster starts to walk over to the dogs and then decides to go to the water instead.  Now what?'";
-        document.getElementById("choice1").innerHTML = "Go for a swim";
-        document.getElementById("choice2").innerHTML = "Get a drink";
-    } else if (choice == 1 && answer1 == "Go ahead and be brave") {
-        document.getElementById("story").innerHTML = "Pugster decides to go in even with hesitation to make new friends.  Will it work?'";
-        document.getElementById("choice1").innerHTML = "Yes it will work";
-        document.getElementById("choice2").innerHTML = "No it will not work";
-    } else if (choice == 2 && answer2 == "Scan the situation") {
-        document.getElementById("story").innerHTML = "Pugster decides to just look around for the moment. What should Pugster do now?";
-        document.getElementById("choice1").innerHTML = "Watch from afar";
-        document.getElementById("choice2").innerHTML = "Get in closer";
+    if (choice == 1 && answer1 == "Disarm The Bomb") {
+        document.getElementById("story").innerHTML = "You look at both of the wires. One of them has to be cut. Which one are you choosing?";
+        document.getElementById("choice1").innerHTML = "The Blue Wire";
+        document.getElementById("choice2").innerHTML = "The Yellow Wire";
+    } else if (choice == 2 && answer2 == "Totally Give Up and Cry") {
+        document.getElementById("story").innerHTML = "You cower in the corner and accept your fate. Honestly I had more faith in you." + "<br>Restart?";
+        document.getElementById("choice1").innerHTML = "Yes Restart";
+        document.getElementById("choice2").innerHTML = "Quit";
+    } else if (choice == 1 && answer1 == "The Blue Wire") {
+        document.getElementById("story").innerHTML = "Whew. It looks like the clock on the front stopped. But wait. You flip the bomb over and there's a SECOND timer?! The First Must've been a decoy. This time there's a lock. What do you try?";
+        document.getElementById("choice1").innerHTML = "1234 (Maybe our arch nemesis is dumber than we thought.";
+        document.getElementById("choice2").innerHTML = "It's got to be 0916. It's his mother's birthday. We used to be best friends, I would know.";
+    } else if (choice == 2 && answer2 == "The Yellow Wire") {
+        document.getElementById("story").innerHTML = "The world goes in in a blaze of glory. You should've known our arch nemisis hated the color yellow." + "<br>Restart?";
+        document.getElementById("choice1").innerHTML = "Yes Restart";
+        document.getElementById("choice2").innerHTML = "Quit";
+    } else if (choice == 1 && answer1 == "1234 (Maybe our arch nemesis is dumber than we thought.") {
+        document.getElementById("story").innerHTML = "It looks like we underestimated him. The bomb went off." + "<br>Restart?";
+        document.getElementById("choice1").innerHTML = "Yes Restart";
+        document.getElementById("choice2").innerHTML = "Quit";
+    } else if (choice == 2 && answer2 == "It's got to be 0916. It's his mother's birthday. We used to be best friends, I would know.") {
+        document.getElementById("story").innerHTML = "Quick thinking. It looks like the lock opened and the sticks of dynamite were able to be removed just in time." +"<br>Restart?";
+        document.getElementById("choice1").innerHTML = "Yes Restart";
+        document.getElementById("choice2").innerHTML = "Quit";
     }
-    // need to do these
-    else if (choice == 1 && answer1 == "Evaluate all dogs") {
-        document.getElementById("story").innerHTML = "Pugster decides that evaluation is the best option." + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "Stay clear") {
-        document.getElementById("story").innerHTML = "Pugster decides staying away is the best option" + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 1 && answer1 == "Go for a swim") {
-        document.getElementById("story").innerHTML = "Pugster decides that swimming sounds most fun" + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "Get a drink") {
-        document.getElementById("story").innerHTML = "Pugster decides it's time to drink" + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 1 && answer1 == "Yes it will work") {
-        document.getElementById("story").innerHTML = "Pugster thinks, yeah this will work out." + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "No it will not work") {
-        document.getElementById("story").innerHTML = "Pugster thinks, I don't think this will work out." + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 1 && answer1 == "Watch from afar") {
-        document.getElementById("story").innerHTML = "Pugster decides it's time to just watch from a distance for safety." + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "Get in closer") {
-        document.getElementById("story").innerHTML = "Pugster decides to get just a little closer, but not engage." + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 1 && answer1 == "Yes restart") {
-        document.getElementById("story").innerHTML = "Our fearless leader, 'Pugster' has entered the dog park for the first time. Scared? Yes, but willing to give it a try. Are you ready to start on adventure with Pugster?";
-        document.getElementById("choice1").innerHTML = "Yes";
-        document.getElementById("choice2").innerHTML = "No";
-    } else if (choice == 2 && answer2 == "No quit") {
-        document.getElementById("story").innerHTML = "Pugster thanks you!";
-
-    }
-
-
+   
 }
