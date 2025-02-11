@@ -1,0 +1,93 @@
+<html>
+    <style>
+        body{
+            background-color: rgb(50, 46, 74);
+        }
+    </style>
+       <body>
+
+        <h1>Trying to get home...</h1>
+        <br>
+        <img src="forest.webp" id="mainImage">
+    <div id="question">
+    <br>
+        Trying to find your way out of this dense and scary forest, you stumble upon a large tree.
+        <br>
+        At the base of the tree there is an opening. Do you explore?
+    </div>
+       
+        <br>
+        <input type="text" size="30" id="first" value="Yes or No?">
+        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+        <input type="text" size="30" id="second" value="Yes or No?" style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="third" value="Follow or Ignore?"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+    </body>
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("first").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "Yes")
+            {
+                document.getElementById("first").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("second").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block";
+                
+
+                myQuestion.innerHTML = "You walk through the dark hole and find a small rabbit sitting and waiting for you. Do you approach him?";
+            }
+            else if(myChoice === "No")
+            {
+                document.getElementById("first").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("third").style.display="block";
+                document.getElementById("btnSubmit3").style.display="block";
+                myQuestion.innerHTML = "You continue walking and find a river. Do you follow it down stream or ignore it?";
+
+            }
+            else
+            {
+                myQuestion.innerHTML = "Please choose one of the two answers.";
+            }
+        
+        }
+        function getChoice2()
+        {
+            var answer = document.getElementById("second").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "Yes")
+            {
+                document.getElementById("mainImage").src = "map.webp"
+                myQuestion.innerHTML = "The Rabbit inquires about your name, and upon a short and simple greeting, he pulls out a map and compass to find your way home.";
+            }
+            else if(answer === "No")
+            {
+                myQuestion.innerHTML = "You leave the tree, a bit scared of the rabbit and are back where you started.";
+            }
+        }
+
+        function getChoice3()
+        {
+            var answer = document.getElementById("third").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "Follow")
+            {
+                document.getElementById("mainImage").src = "river.jpeg"
+                myQuestion.innerHTML = "test";
+            }
+            else if(answer === "Ignore")
+            {
+                myQuestion.innerHTML = "Ignoring the river, you ended up getting even more lost, eventually dying of hunger.";
+            }
+        }
+    </script>
+
+</html>
