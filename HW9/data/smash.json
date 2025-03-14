@@ -1,0 +1,14 @@
+{
+    "controller" : "Pro Controller",
+    "hours" : "3000+",
+    "player" : {
+        "firstName" : "Ethan",
+        "lastName" : "Kaull"
+    },
+    "mains" : [
+        "Chrom",
+        "King K Rool",
+        "Joker",
+        "Falco"
+    ]
+}

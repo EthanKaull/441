@@ -1,0 +1,4 @@
+<smash>
+	<Controller>Pro Controller</Controller>
+	<hours>3000+</hours>
+</smash>
