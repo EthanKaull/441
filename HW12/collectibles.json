@@ -1,0 +1,7 @@
+{
+  "collectibles": [
+    { "x": 150, "y": 100, "width": 20, "height": 20, "color": "#FFD700" },
+    { "x": 350, "y": 200, "width": 20, "height": 20, "color": "#FFD700" },
+    { "x": 600, "y": 350, "width": 20, "height": 20, "color": "#FFD700" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "obstacles": [
+    { "x": 100, "y": 300, "width": 50, "height": 50, "color": "#8B0000" },
+    { "x": 250, "y": 150, "width": 40, "height": 60, "color": "#8B0000" },
+    { "x": 400, "y": 250, "width": 80, "height": 40, "color": "#8B0000" },
+    { "x": 600, "y": 100, "width": 30, "height": 30, "color": "#8B0000" },
+    { "x": 500, "y": 400, "width": 70, "height": 70, "color": "#8B0000" }
+  ]
+}
+
