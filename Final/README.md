@@ -1,0 +1,2 @@
+# 441
+Hello! Unsure if this is necessary to have a description of my final art piece or not, but I thought I would do it anyways. I wanted to build off of something we started earlier, that I had an idea for while building my code. I felt like the change in background colors / just the unpredictability of the squares and scene as a whole really mirrored how the human mind works. It's truly an unpredictable and wild space, and I tried to replicate that with things we have learned throughout the year.
