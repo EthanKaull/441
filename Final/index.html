@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Human Mind</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">The Human Mind</h1>
+  <canvas id="artCanvas"></canvas>
+  <div id="threeContainer"></div>
+  <audio id="backgroundAudio" src="people.mp3" loop></audio>
+
+  <button id="playAudioButton">Play Audio</button>
+  <script src="three.min.js"></script>
+  <script src="TrackballControls.js"></script>
+  <script src="OBJLoader.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="artCanvas.js"></script>
+  <script src="scene3D.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    #title {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: Arial, sans-serif;
+      font-size: 90px;
+      color: rgb(255, 156, 156);
+      z-index: 10;
+      margin: 0;
+    }
+    #playAudioButton {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 25px;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 10;
+    }
+    #playAudioButton:hover {
+      background-color: #555;
+    }
+  </style>
+  <script>
+    const playButton = document.getElementById('playAudioButton');
+    const backgroundAudio = document.getElementById('backgroundAudio');
+
+    playButton.addEventListener('click', () => {
+      if (backgroundAudio.paused) {
+        backgroundAudio.play();
+        playButton.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
